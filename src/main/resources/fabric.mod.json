@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "vantaclient",
+  "version": "${version}",
+  "name": "Vanta Client",
+  "description": "Vanta Client 26.2 V3: customizable HUD styles and scaling, client-side visuals, freelook, movement helpers and performance controls.",
+  "environment": "client",
+  "icon": "assets/vantaclient/logo.png",
+  "entrypoints": {
+    "client": [
+      "dev.vanta.client.VantaClient"
+    ]
+  },
+  "mixins": [
+    "vantaclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
